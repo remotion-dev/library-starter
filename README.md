@@ -11,7 +11,7 @@ There are two ways of using this repository. Either use this repository as a tem
 or use Turbo's CLI to init your project (use PNPM as package manager):
 
 ```sh
-pnpx create-turbo@latest -e https://github.com/remotion-dev/remotion-library-template
+pnpx create-turbo@latest -e https://github.com/remotion-dev/library-template
 ```
 
 ### What's Inside?

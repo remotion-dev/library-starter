@@ -8,7 +8,7 @@ const Root = () => {
       <Composition
         id="custom-component-example"
         component={FadeOutExample}
-        durationInFrames={30 * 10}
+        durationInFrames={30 * 3}
         fps={30}
         height={1080}
         width={1920}

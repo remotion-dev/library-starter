@@ -1,0 +1,19 @@
+{
+  "name": "use-second",
+  "version": "0.0.1",
+  "description": "Example react hook for use in remotion to get current second.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "remotion": "4.0.45"
+  },
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "estlint-custom-config": "workspace:*"
+  },
+  "scripts": {
+    "dev": "npm run build",
+    "build": "tsup index.ts --format cjs,esm --dts"
+  }
+}

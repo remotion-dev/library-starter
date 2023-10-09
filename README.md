@@ -1,81 +1,51 @@
-# Turborepo starter
+## Remotion Library Template
 
-This is an official starter Turborepo.
+This is a turborepo template you could clone to develop your own react libraries and components for the [Remotion](https:/remotion.dev/) ecosystem with the best practices applied out of the box.
 
-## Using this example
+### Installation
 
-Run the following command:
+There are two ways of using this repository. Either use this repository as a template:
+
+ <!-- TODO: Add image -->
+
+or use Turbo's CLI to init your project (use PNPM as package manager):
 
 ```sh
-npx create-turbo@latest
+pnpx create-turbo@latest -e https://github.com/remotion-dev/remotion-library-template
 ```
 
-## What's inside?
+### What's Inside?
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+This starter template uses Turborepo to manage packages across the monorepo, and pnpm as a package manager. This project contains:
 
 ```
-cd my-turborepo
-pnpm build
+apps
+└── studio
+    └── Remotion studio environment that lets you test out internal components and hooks
+
+packages
+├── example-components
+│   └── Example (publishable) components like FadeOut
+└── use-second
+    └── Example (publishable) hook
+
+tooling
+├── eslint
+│   └── ESLint configuration
+└── typescript
+    └── TypeScript configuration
 ```
 
-### Develop
+Each of these directories has their own respective README.md files with more information on how to use them.
 
-To develop all apps and packages, run the following command:
+### Common Workflows
 
-```
-cd my-turborepo
-pnpm dev
-```
+#### Creating a new package
 
-### Remote Caching
+To add a new package, simply run `pnpm turbo gen` init in the monorepo root. This will prompt you for a package name as well as if you want to install any dependencies to the new package (of course you can also do this yourself later).
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+The generator sets up the `package.json`, `tsconfig.json` and a `index.ts,` as well as configures all the necessary configurations for tooling around your package such as formatting, linting and typechecking. When the package is created, you're ready to go build out the package.
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+### Credits
 
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Create-t3-turbo](https://github.com/t3-oss/create-t3-turbo/) for inspiring the project structure, scripts, and readme

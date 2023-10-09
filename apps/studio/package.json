@@ -1,0 +1,19 @@
+{
+  "name": "studio",
+  "main": "./index.tsx",
+  "scripts": {
+    "dev": "npx remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "example-components": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.45",
+    "use-second": "workspace:*"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.45",
+    "@types/react": "^18.2.26",
+    "@types/react-dom": "^18.2.11"
+  }
+}

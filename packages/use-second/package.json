@@ -6,7 +6,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "remotion": "4.0.45"
+    "remotion": "4.0.46"
   },
   "devDependencies": {
     "tsconfig": "workspace:*",

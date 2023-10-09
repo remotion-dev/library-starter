@@ -7,17 +7,15 @@ export default function UseSecondExample() {
   return (
     <AbsoluteFill
       style={{
+        backgroundColor: "white",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "white",
-        color: "black",
-        fontSize: "100px",
-        fontFamily: "sans-serif",
-        gap: "100px",
       }}
     >
-      <p style={{ fontSize: "50px" }}>Currently playing</p> {second.toFixed(2)}
+      <h1 style={{ fontSize: 200, fontFamily: "sans-serif", color: "black" }}>
+        Second {second.toFixed(2)}
+      </h1>
     </AbsoluteFill>
   );
 }

@@ -45,6 +45,14 @@ Before publishing, you should change the default name of `my-library` to your li
 1. Increment the version of your library in `packages/library/package.json`.
 1. Run `pnpm recursive publish` to publish your library to NPM.
 
+## Cleaning
+
+You can clear all caches and dependencies by running the following command in the root:
+
+```bash
+pnpm run clean
+```
+
 ## Credits
 
 This package was authored by [Mohit Yadav](https://github.com/Just-Moh-it/) and inspired by [Create-t3-turbo](https://github.com/t3-oss/create-t3-turbo/).

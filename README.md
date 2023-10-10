@@ -24,8 +24,6 @@ apps
     └── Remotion studio environment that lets you test out internal components and hooks
 
 packages
-├── example-components
-│   └── Example (publishable) components like FadeOut
 └── use-second
     └── Example (publishable) hook
 

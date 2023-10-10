@@ -4,5 +4,5 @@ export const useCurrentSecond = () => {
   const currentFrame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  return currentFrame / fps / 2;
+  return currentFrame / fps;
 };

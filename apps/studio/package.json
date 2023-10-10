@@ -5,7 +5,6 @@
     "start": "npx remotion studio src/index.ts"
   },
   "dependencies": {
-    "example-components": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remotion": "^4.0.46",

@@ -39,6 +39,8 @@ Before publishing, you should change the default name of `my-library` to your li
 1. Find and replace all occurrences of `my-library` with your library name in the project, except for the occurence in `pnpm-lock.yaml`
 1. Run `pnpm i`.
 
+Also change your name in `packages/library/LICENSE.md` and `packages/library/package.json` as well as adjust the `packages/library/README.md`.
+
 ## Publishing
 
 1. Run `pnpm run build` to build your library.

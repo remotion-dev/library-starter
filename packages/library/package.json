@@ -5,15 +5,15 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "dependencies": {
-    "remotion": "4.0.46"
+  "peerDependencies": {
+    "remotion": "*"
   },
   "devDependencies": {
-    "eslint-custom-config": "workspace:*"
+    "remotion": "^4.0.46"
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "watch": "tsup src/index.ts --format cjs,esm --dts --watch"
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
   "publishConfig": {
     "access": "public"

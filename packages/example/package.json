@@ -3,13 +3,16 @@
   "main": "./index.tsx",
   "scripts": {
     "start": "remotion studio",
-    "watch": "remotion studio --no-open"
+    "dev": "remotion studio --no-open"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remotion": "^4.0.46",
     "my-library": "workspace:*"
+  },
+  "peerDependencies": {
+    "remotion": "*"
   },
   "devDependencies": {
     "@remotion/cli": "4.0.46",

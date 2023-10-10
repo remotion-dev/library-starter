@@ -8,7 +8,14 @@ This Turborepo template:
 
 ### Installation
 
-To create your own library, [use this repository as a template](https://github.com/new?owner=remotion-dev&template_name=library-starter&template_owner=remotion-dev)
+To create your own library, [use this repository as a template](https://github.com/new?owner=remotion-dev&template_name=library-starter&template_owner=remotion-dev).
+
+After cloning the resulting library, initialize it using:
+
+```
+pnpm i
+pnpm run dev
+```
 
 ### What's Inside?
 

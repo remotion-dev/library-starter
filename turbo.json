@@ -9,7 +9,6 @@
     "dev": {
       "cache": false,
       "persistent": true
-    },
-    "watch": {}
+    }
   }
 }

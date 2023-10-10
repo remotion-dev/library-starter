@@ -24,8 +24,21 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  apps/studio:
+  packages/my-library:
     dependencies:
+      remotion:
+        specifier: 4.0.46
+        version: 4.0.46(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      eslint-custom-config:
+        specifier: workspace:*
+        version: link:../../tooling/eslint
+
+  packages/studio:
+    dependencies:
+      my-library:
+        specifier: workspace:*
+        version: link:../my-library
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -35,9 +48,6 @@ importers:
       remotion:
         specifier: ^4.0.46
         version: 4.0.46(react-dom@18.2.0)(react@18.2.0)
-      use-second:
-        specifier: workspace:*
-        version: link:../../packages/my-library
     devDependencies:
       '@remotion/cli':
         specifier: 4.0.46
@@ -48,16 +58,6 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.11
         version: 18.2.11
-
-  packages/my-library:
-    dependencies:
-      remotion:
-        specifier: 4.0.46
-        version: 4.0.46(react-dom@18.2.0)(react@18.2.0)
-    devDependencies:
-      eslint-custom-config:
-        specifier: workspace:*
-        version: link:../../tooling/eslint
 
   tooling/eslint:
     devDependencies:

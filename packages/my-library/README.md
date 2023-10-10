@@ -7,7 +7,7 @@ Part of Remotion Library Starter as an example hook.
 ### Usage
 
 ```tsx
-import { useSecond } from "use-second";
+import { useSecond } from "my-library";
 import { Composition, AbsoluteFill } from "remotion";
 import { render} from React;
 

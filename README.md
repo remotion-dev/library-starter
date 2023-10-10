@@ -24,14 +24,12 @@ apps
     └── Remotion studio environment that lets you test out internal components and hooks
 
 packages
-└── use-second
+└── my-library
     └── Example (publishable) hook
 
 tooling
-├── eslint
-│   └── ESLint configuration
-└── typescript
-    └── TypeScript configuration
+└── eslint
+    └── ESLint configuration
 ```
 
 Each of these directories has their own respective README.md files with more information on how to use them.

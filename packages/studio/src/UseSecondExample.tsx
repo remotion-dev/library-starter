@@ -1,4 +1,4 @@
-import { useCurrentSecond } from "use-second";
+import { useCurrentSecond } from "my-library";
 import { AbsoluteFill } from "remotion";
 
 export default function UseSecondExample() {

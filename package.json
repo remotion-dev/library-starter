@@ -12,7 +12,8 @@
     "build": "turbo run build",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "watch": "turbo run watch"
+    "watch": "turbo run watch",
+    "clean": "rm -rf packages/**/.turbo && rm -rf packages/**/dist && rm -rf packages/**/node_modules/.cache && rm -rf .turbo && rm -rf node_modules/.cache"
   },
   "devDependencies": {
     "eslint": "^8.48.0",

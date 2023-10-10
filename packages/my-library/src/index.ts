@@ -1,1 +1,1 @@
-export * from "./use-second";
+export * from "./my-library";

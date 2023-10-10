@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationMap": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
@@ -13,7 +12,6 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
-    "composite": true,
     "jsx": "react-jsx"
   }
 }

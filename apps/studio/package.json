@@ -2,7 +2,7 @@
   "name": "studio",
   "main": "./index.tsx",
   "scripts": {
-    "dev": "npx remotion studio src/index.ts"
+    "start": "npx remotion studio src/index.ts"
   },
   "dependencies": {
     "example-components": "workspace:*",

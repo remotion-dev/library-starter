@@ -10,10 +10,13 @@
   },
   "devDependencies": {
     "tsconfig": "workspace:*",
-    "estlint-custom-config": "workspace:*"
+    "eslint-custom-config": "workspace:*"
   },
   "scripts": {
     "dev": "npm run build",
-    "build": "tsup index.ts --format cjs,esm --dts"
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

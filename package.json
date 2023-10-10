@@ -1,5 +1,5 @@
 {
-  "name": "remotion-library-template",
+  "name": "library-starter",
   "description": "Turborepo template that makes it easy to develop a library in the Remotion ecosystem with the best practices applied out of the box",
   "author": {
     "name": "Mohit Yadav",

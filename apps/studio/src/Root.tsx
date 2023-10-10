@@ -5,7 +5,7 @@ const Root = () => {
   return (
     <>
       <Composition
-        id="hook-example"
+        id="hello-world"
         component={UseSecondExample}
         durationInFrames={30 * 10}
         fps={30}

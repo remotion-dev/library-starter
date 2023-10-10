@@ -1,12 +1,12 @@
 import { Composition } from "remotion";
-import UseSecondExample from "./UseSecondExample";
+import Example from "./Example";
 
 const Root = () => {
   return (
     <>
       <Composition
-        id="hello-world"
-        component={UseSecondExample}
+        id="Example"
+        component={Example}
         durationInFrames={30 * 10}
         fps={30}
         height={1080}

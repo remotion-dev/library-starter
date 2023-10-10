@@ -1,7 +1,7 @@
 import { useCurrentSecond } from "my-library";
 import { AbsoluteFill } from "remotion";
 
-export default function UseSecondExample() {
+export default function Example() {
   const second = useCurrentSecond();
 
   return (

@@ -1,18 +1,15 @@
-## Use Second
+## `my-library`
 
-A react hook for use with [Remotion](https://remotion.dev/) that returns the current second based on current frame and fps.
-
-Part of Remotion Library Starter as an example hook.
+A React hook for use with [Remotion](https://remotion.dev/) that returns the current second.
 
 ### Usage
 
 ```tsx
-import { useSecond } from "my-library";
-import { Composition, AbsoluteFill } from "remotion";
-import { render} from React;
+import { useCurrentSecond } from "my-library";
+import { AbsoluteFill } from "remotion";
 
-export const MyVideo: React.FC = () => {
-  const second = useSecond();
+export const Example: React.FC = () => {
+  const second = useCurrentSecond();
 
   return (
     <AbsoluteFill>
@@ -20,19 +17,9 @@ export const MyVideo: React.FC = () => {
     </AbsoluteFill>
   );
 };
-
-render(
-  <Composition
-    fps={30}
-    durationInFrames={30 * 10}
-    component={MyVideo}
-    width={1080}
-    height={1080}
-  />,
-  document.getElementById("root")
-);
 ```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+See the [LICENSE.md](LICENSE.md) file for the license of this repo.  
+To use Remotion, a company license is needed for some entities. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).

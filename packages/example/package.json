@@ -3,7 +3,8 @@
   "main": "./index.tsx",
   "scripts": {
     "start": "remotion studio",
-    "dev": "remotion studio --no-open"
+    "dev": "remotion studio --no-open",
+    "lint": "eslint src"
   },
   "dependencies": {
     "react": "^18.2.0",

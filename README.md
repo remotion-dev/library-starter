@@ -1,35 +1,23 @@
-## Remotion Library Template
+## Remotion Library Starter
 
-This is a turborepo template you could clone to develop your own react libraries and components for the [Remotion](https:/remotion.dev/) ecosystem with the best practices applied out of the box.
+This Turborepo template:
+
+- you could clone to develop your own Remotion libraries and components
+- includes best practices for developing Remotion libraries out of the box
+- includes an example package for testing your library
 
 ### Installation
 
-There are two ways of using this repository. Either use this repository as a template:
-
- <!-- TODO: Add image -->
-
-or use Turbo's CLI to init your project (use PNPM as package manager):
-
-```sh
-pnpx create-turbo@latest -e https://github.com/remotion-dev/library-starter
-```
+To create your own library, [use this repository as a template](https://github.com/new?owner=remotion-dev&template_name=library-starter&template_owner=remotion-dev)
 
 ### What's Inside?
 
 This starter template uses Turborepo to manage packages across the monorepo, and pnpm as a package manager. This project contains:
 
-```
-apps
-└── studio
-    └── Remotion studio environment that lets you test out internal components and hooks
-
-packages
-└── my-library
-    └── Example (publishable) hook
-
-tooling
-└── eslint
-    └── ESLint configuration
+```t
+packages/
+├─ example/ # Sample testbed
+└─ library/ # Your library code
 ```
 
 Each of these directories has their own respective README.md files with more information on how to use them.

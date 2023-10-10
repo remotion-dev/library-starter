@@ -42,7 +42,8 @@ Before publishing, you should change the default name of `my-library` to your li
 ## Publishing
 
 1. Run `pnpm run build` to build your library.
-2. Run `pnpm publish` to publish your library to NPM.
+1. Increment the version of your library in `packages/library/package.json`.
+1. Run `pnpm recursive publish` to publish your library to NPM.
 
 ## Credits
 

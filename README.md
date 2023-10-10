@@ -30,6 +30,14 @@ pnpm run lint
 
 either from the root or from an individual package.
 
-### Credits
+## Changing the library name
 
-- [Create-t3-turbo](https://github.com/t3-oss/create-t3-turbo/) for inspiring the project structure, scripts, and readme
+Before publishing, you should change the default name of `my-library` to your library name.
+
+1. Stop all commands such as `pnpm run dev`
+2. Find and replace all occurrences of `my-library` with your library name in the project, except for the occurence in `pnpm-lock.yaml`
+3. Run `pnpm i`.
+
+## Credits
+
+This package was authored by [Mohit Yadav](https://github.com/Just-Moh-it/) and inspired by [Create-t3-turbo](https://github.com/t3-oss/create-t3-turbo/).

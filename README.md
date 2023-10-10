@@ -35,8 +35,14 @@ either from the root or from an individual package.
 Before publishing, you should change the default name of `my-library` to your library name.
 
 1. Stop all commands such as `pnpm run dev`
-2. Find and replace all occurrences of `my-library` with your library name in the project, except for the occurence in `pnpm-lock.yaml`
-3. Run `pnpm i`.
+1. Ensure your desired NPM package name is available.
+1. Find and replace all occurrences of `my-library` with your library name in the project, except for the occurence in `pnpm-lock.yaml`
+1. Run `pnpm i`.
+
+## Publishing
+
+1. Run `pnpm run build` to build your library.
+2. Run `pnpm publish` to publish your library to NPM.
 
 ## Credits
 

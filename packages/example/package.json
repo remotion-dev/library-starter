@@ -3,7 +3,7 @@
   "main": "./index.tsx",
   "scripts": {
     "start": "remotion studio",
-    "watch": "echo 'Run `npm start` in `example` to start the testbed'"
+    "watch": "remotion studio --no-open"
   },
   "dependencies": {
     "react": "^18.2.0",

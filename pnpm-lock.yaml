@@ -14,9 +14,6 @@ importers:
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
-      tsconfig:
-        specifier: workspace:*
-        version: link:tooling/typescript
       tsup:
         specifier: latest
         version: 7.2.0(typescript@5.2.2)
@@ -40,7 +37,7 @@ importers:
         version: 4.0.46(react-dom@18.2.0)(react@18.2.0)
       use-second:
         specifier: workspace:*
-        version: link:../../packages/use-second
+        version: link:../../packages/my-library
     devDependencies:
       '@remotion/cli':
         specifier: 4.0.46
@@ -52,7 +49,7 @@ importers:
         specifier: ^18.2.11
         version: 18.2.11
 
-  packages/use-second:
+  packages/my-library:
     dependencies:
       remotion:
         specifier: 4.0.46
@@ -61,9 +58,6 @@ importers:
       eslint-custom-config:
         specifier: workspace:*
         version: link:../../tooling/eslint
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../tooling/typescript
 
   tooling/eslint:
     devDependencies:
@@ -73,8 +67,6 @@ importers:
       eslint-config-turbo:
         specifier: ^1.10.12
         version: 1.10.12(eslint@8.48.0)
-
-  tooling/typescript: {}
 
 packages:
 

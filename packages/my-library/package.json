@@ -9,12 +9,12 @@
     "remotion": "4.0.46"
   },
   "devDependencies": {
-    "tsconfig": "workspace:*",
     "eslint-custom-config": "workspace:*"
   },
   "scripts": {
     "dev": "npm run build",
-    "build": "tsup src/index.ts --format cjs,esm --dts"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "watch": "tsup src/index.ts --format cjs,esm --dts --watch"
   },
   "publishConfig": {
     "access": "public"

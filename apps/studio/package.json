@@ -2,7 +2,7 @@
   "name": "studio",
   "main": "./index.tsx",
   "scripts": {
-    "start": "npx remotion studio src/index.ts"
+    "start": "remotion studio src/index.ts"
   },
   "dependencies": {
     "react": "^18.2.0",

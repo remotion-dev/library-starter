@@ -20,6 +20,19 @@ pnpm run dev
 Open the browser on http://localhost:3000 to see the testbed.
 Edit the `packages/library` folder to change your library and edit `packages/example` to edit your testbed.
 
+## Adding React
+
+This template does not include React by default.  
+If you are shipping a React component, you can add it to your library by running:
+
+```sh
+cd packages/library
+npm i "react@^18.0.0" "react-dom@^18.0.0" --save-peer
+pnpm i @types/react @types/react-dom --save-dev
+```
+
+Change the versions to the ones you want to support.
+
 ## Linting
 
 To lint your code, run:
